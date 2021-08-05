@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/photo"/>
+    <EditText
+        android:id="@+id/login_page_Edit_text_id"
+        android:layout_width="wrap_content"
+        android:minWidth="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/hintcolor"
+        android:gravity="center"
+        android:background="@drawable/color_change"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/login_page_Edit_text_password"
+        android:layout_width="wrap_content"
+        android:minWidth="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/hintcolor"
+        android:gravity="center"
+        android:background="@drawable/color_change"
+        android:textColor="@color/black"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/text1"
+        android:textColor="@color/black"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/password_show"
+        android:buttonTint="@color/black"
+        android:id="@+id/cb"/>
+
+    <Button android:id="@+id/login_page_create_account_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/selector_button"
+        android:textStyle="bold"
+        android:text="@string/signup"
+        />
+
+    <Button
+        android:id="@+id/login_page_login_Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_button"
+        android:textStyle="bold"
+        android:text="@string/signin" />
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/login_page"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/signin_create_id_Edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="@string/email"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:inputType="textEmailAddress"
+        android:layout_above="@id/signin_create_password_Edit_text" />
+    <EditText
+        android:id="@+id/signin_create_password_Edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/signin_create_name_Edit_text"/>
+
+    <EditText
+        android:id="@+id/signin_create_name_Edit_text"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:minWidth="200sp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/name"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/signin_gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:layout_below="@id/signin_create_name_Edit_text"
+        android:textSize="20sp"
+        android:layout_toStartOf="@id/signin_gender_Radio_Grop"
+        android:layout_marginTop="3dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/signin_gender_Radio_Grop"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/signin_create_name_Edit_text"
+        android:layout_marginStart="5dp">
+
+        <RadioButton
+            android:id="@+id/signin_gender_man"
+            android:layout_weight="1"
+            android:text="@string/man"
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/signin_gender_woman"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            android:text="@string/woman"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/signin_age_Text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_gender_text_view"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        android:layout_toStartOf="@id/signin_age_Edit_Text"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/signin_age_Edit_Text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/signin_gender_Radio_Grop"
+        android:hint="@string/input_age"
+        android:layout_marginStart="5dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_age_Edit_Text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/signup_create_account_Button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_age_Edit_Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_button"
+        android:textStyle="bold"
+        android:text="@string/create_user" />
+
+
+</RelativeLayout>

@@ -5,8 +5,7 @@
   Bluetooth Classic
 
 ## Permissions
-  code 1:
-  
+ 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,9 +14,7 @@
   
     <uses-permission android:name="android.permission.BLUETOOTH"/>
   
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
- 
- code 3:   
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>  
     
 ## Java Class 설명
 

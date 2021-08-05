@@ -1,12 +1,10 @@
-# Go_Chat
+# Go_Chat (블루투스 통신을 이용한 채팅 어플리케이션)
 
-# 블루투스 통신을 이용한 채팅 어플리케이션
-
-# 어플에 사용한 것
+## 어플에 사용한 것
   Firebase(로그인 정보, 채팅정보) 저장
   Bluetooth Classic
 
-# Permissions
+## Permissions
   code 1:
   
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -21,7 +19,7 @@
  
  code 3:   
     
-# Java Class 설명
+## Java Class 설명
 
   ChatController: 블루투스를 연결, 메세지 송수신, 연결 해제, 데이터베이스에 채팅 기록 값 저장  -  (Thread를 이용)
   
